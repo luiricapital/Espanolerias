@@ -217,10 +217,15 @@
     .mobile-wa-btn {
       margin-top: 16px;
       display: flex; align-items: center; justify-content: center; gap: 8px;
-      background: var(--primary); color: var(--primary-fg);
+      background: var(--primary); color: #ffffff !important;
       padding: 12px 20px; border-radius: 9999px;
       font-size: 0.875rem; font-weight: 600;
       text-decoration: none;
+      border-bottom: none !important;
+    }
+    .mobile-wa-btn:hover, .mobile-wa-btn:active, .mobile-wa-btn:focus {
+      background: var(--burgundy-deep); color: #ffffff !important;
+      opacity: 1;
     }
     .mobile-wa-btn svg { width: 18px; height: 18px; fill: currentColor; }
     @media (min-width: 768px) {
