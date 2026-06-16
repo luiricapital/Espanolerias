@@ -115,23 +115,11 @@
     .hero-content .hero-p       { animation-delay: 0.25s; }
     .hero-content .hero-btns    { animation-delay: 0.35s; }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
-                  transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     /* ─── Reduced motion ─────────────────────────────────── */
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .hero-scroll { animation: none; }
       .hero-content > * { animation: none; opacity: 1; }
-      .reveal { opacity: 1; transform: none; transition: none; }
       *, *::before, *::after {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
@@ -865,7 +853,7 @@
 <!-- ══ DESAYUNOS ════════════════════════════════════════════════ -->
 <section id="desayunos">
   <div class="section-wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div class="red-divider" style="margin:0 auto 16px;"></div>
       <div class="breakfast-title-wrap">
         <h2 class="section-title">Ahora También Desayunos</h2>
@@ -875,7 +863,7 @@
     </div>
     <div class="cards-grid-4">
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/breakfast/desayuno-tipico.jpg" alt="Desayuno Típico Dominicano de Españolerías" loading="lazy">
         </div>
@@ -888,7 +876,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/breakfast/tostadas-aguacate.jpg" alt="Tostadas de Aguacate de Españolerías" loading="lazy">
         </div>
@@ -901,7 +889,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/breakfast/desayuno-americano.jpg" alt="Desayuno Americano de Españolerías" loading="lazy">
         </div>
@@ -914,7 +902,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/breakfast/pancakes-nutella.jpg" alt="Pancakes con Nutella de Españolerías" loading="lazy">
         </div>
@@ -934,14 +922,14 @@
 <!-- ══ NUESTROS FAVORITOS ═══════════════════════════════════════ -->
 <section id="productos">
   <div class="section-wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div class="gold-divider" style="margin:0 auto 16px;"></div>
       <h2 class="section-title">Nuestros Favoritos</h2>
       <p class="section-sub">Creaciones artesanales hechas con tradición y los mejores ingredientes.</p>
     </div>
     <div class="cards-grid-3">
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/products/mil-hojas.jpg" alt="Mil Hojas de Españolerías" loading="lazy">
         </div>
@@ -957,7 +945,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/products/cheese-cake.jpg" alt="Cheese Cake de Españolerías" loading="lazy">
         </div>
@@ -973,7 +961,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/products/red-velvet.jpg" alt="Red Velvet de Españolerías" loading="lazy">
         </div>
@@ -989,7 +977,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/products/saint-honore.jpg" alt="Saint Honoré de Españolerías" loading="lazy">
         </div>
@@ -1005,7 +993,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/products/mori-sonando.jpg" alt="Morí Soñando de Españolerías" loading="lazy">
         </div>
@@ -1021,7 +1009,7 @@
         </div>
       </article>
 
-      <article class="product-card reveal">
+      <article class="product-card">
         <div class="card-img-wrap">
           <img src="./assets/products/chocolate.jpg" alt="Chocolate de Españolerías" loading="lazy">
         </div>
@@ -1044,7 +1032,7 @@
 <!-- ══ REVIEWS ══════════════════════════════════════════════════ -->
 <section id="reviews">
   <div class="section-wrap">
-    <div class="reviews-hero reveal">
+    <div class="reviews-hero">
       <div class="red-divider" style="margin:0 auto 16px;"></div>
       <div class="rating-row">
         <span class="star-emoji">⭐</span>
@@ -1054,7 +1042,7 @@
     </div>
     <div class="reviews-grid">
 
-      <article class="review-card reveal">
+      <article class="review-card">
         <div class="review-stars">
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
@@ -1069,7 +1057,7 @@
         </div>
       </article>
 
-      <article class="review-card reveal">
+      <article class="review-card">
         <div class="review-stars">
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
@@ -1084,7 +1072,7 @@
         </div>
       </article>
 
-      <article class="review-card reveal">
+      <article class="review-card">
         <div class="review-stars">
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
@@ -1111,13 +1099,13 @@
 <!-- ══ ENCUÉNTRANOS ═════════════════════════════════════════════ -->
 <section id="location">
   <div class="section-wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
       <div class="gold-divider" style="margin:0 auto 16px;"></div>
       <h2 class="section-title">Encuéntranos</h2>
       <p class="section-sub">Visítanos y vive la experiencia Españolerías en persona.</p>
     </div>
     <div class="location-grid">
-      <div class="info-cards-stack reveal">
+      <div class="info-cards-stack">
 
         <div class="info-card">
           <div class="info-card-header">
@@ -1161,7 +1149,7 @@
         </div>
 
       </div>
-      <div class="map-wrap reveal">
+      <div class="map-wrap">
         <iframe
           title="Ubicación de Españolerías Cake Shop Café"
           src="https://www.google.com/maps?q=Espa%C3%B1oler%C3%ADas+Cake+Shop+Caf%C3%A9,+Calle+Amelia+Francasci+19,+Santo+Domingo&output=embed"
@@ -1289,26 +1277,6 @@
     });
   });
 
-  // Scroll reveal with stagger for sibling cards
-  const revealObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const siblings = el.parentElement.querySelectorAll('.reveal');
-      let delay = 0;
-      siblings.forEach(function (sib, i) {
-        if (sib === el) delay = i * 130;
-      });
-      setTimeout(function () {
-        el.classList.add('visible');
-      }, delay);
-      revealObserver.unobserve(el);
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.reveal').forEach(function (el) {
-    revealObserver.observe(el);
-  });
 </script>
 </body>
 </html>
