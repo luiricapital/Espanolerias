@@ -1,0 +1,14 @@
+# Local dev server
+serve.mjs
+
+# Claude Code config
+.claude/
+settings.local.json
+
+# Reference screenshots
+screencapture-*.png
+
+# Working folders (not part of the site)
+Bizcochos/
+Desayunos/
+espanolerias-main/
